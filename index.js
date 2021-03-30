@@ -31,7 +31,7 @@ function reverseCharacters(num) {
     return num.split("").reverse().join("");
   }
     }
-reverseCharacters(1234);
+console.log(reverseCharacters(1234));
 //3) Create a new function with one parameter, which is the array we want to change. The function should:
 //a) Define and initialize an empty array.
 //b) Loop through the old array.
@@ -45,12 +45,10 @@ reverseCharacters(1234);
  for(let i=0;i<array.length;i++)
  {
    result.unshift(reverseCharacters(array[i]));
-   console.log(result);
  } 
  return result;
  }
- reverseArray(['hello', 'world', 123, 'orange']);
-
+ 
 // let myVariableArray = ['hello', 'world', 123, 'orange'];
 // console.log(reverseArray(myVariableArray));
 
@@ -59,3 +57,6 @@ reverseCharacters(1234);
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
+console.log(reverseArray(arrayTest1));
+ console.log(reverseArray(arrayTest2));
+ console.log(reverseArray(arrayTest3));
